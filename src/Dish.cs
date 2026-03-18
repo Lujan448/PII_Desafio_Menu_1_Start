@@ -13,11 +13,11 @@ namespace Ucu.Poo.Restaurant
         public bool IsVegetarian { get;set; }
 
         //Constructor
-        public Dish(string name, double price, bool isVegetarian)
+        public Dish(string Name, double Price, bool IsVegetarian)
         {
-            Name = name;
-            Price = price;
-            IsVegetarian = isVegetarian;
+            this.Name = Name;
+            this.Price = Price;
+            this.IsVegetarian = IsVegetarian;
         }
     }
 }
