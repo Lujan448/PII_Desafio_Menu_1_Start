@@ -7,9 +7,6 @@ namespace Ucu.Poo.Restaurant
     /// </summary>
     public static class Program
     {
-        /// <summary>
-        /// Punto del entrada al programa.
-        /// </summary>
         public static void Main()
         {
             Dish burger = new Dish("Burger", 5.99, false);
@@ -20,7 +17,7 @@ namespace Ucu.Poo.Restaurant
             Table oneTable = new Table(1);
             Waiter waiter = new Waiter("John");
             waiter.AssignTable(oneTable);
-            oneTable.Ocupy();
+            oneTable.Occupy();
             waiter.TakeOrder(oneTable, burger);
             Console.WriteLine(
             $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied} " +

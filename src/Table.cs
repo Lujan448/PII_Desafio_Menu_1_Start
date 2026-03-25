@@ -19,10 +19,10 @@ namespace Ucu.Poo.Restaurant
             get {return isOccupied; } set {isOccupied = value;}
         }
 
-        public Table(int number, bool isOccupied)
+        public Table(int number)
         {
             this.Number = number;
-            this.IsOccupied = isOccupied;
+            this.IsOccupied = false;
         }
 
         public void Occupy()
