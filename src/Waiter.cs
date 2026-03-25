@@ -41,6 +41,7 @@ namespace Ucu.Poo.Restaurant
             }
             table.AddToOrder(dish);
             Console.WriteLine($"Pedido de {dish.Name} agregado a la mesa {table.Number}");
+
         }
     }
 }
