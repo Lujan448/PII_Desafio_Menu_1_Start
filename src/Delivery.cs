@@ -6,23 +6,23 @@ namespace Ucu.Poo.Restaurant
     public class Delivery
     {
         private List<Dish> orden = new List<Dish>();
-        public void AddToOrden(Dish pedido)
+        public void AddToOrder(Dish pedido)
         {
             orden.Add(pedido);
         }
-        public bool HasOrdenes()
+        public bool HasOrder()
         {
             return orden.Count > 0;
         }
        
-        public double GetTotalDelivery()
+        public double GetTotal()
         {
-                double resultado = 0;
+                double result = 0;
                 foreach (Dish item in this.orden)
                 {
-                    resultado = resultado + item.Price;
+                    result = result + item.Price;
                 }
-                return resultado;
+                return result;
  
         }
     }
