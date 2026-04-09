@@ -25,6 +25,8 @@ namespace Ucu.Poo.Restaurant
             oneTable.Free();
             Console.WriteLine(
             $"La mesa {oneTable.Number} está ocupada: {oneTable.IsOccupied}");
+
+            //Creé un objeto chivito para poder utilizar el método Delivery que agregue.
             Dish chivito = new Dish("Chivito", 6.00,false);
             Delivery casa = new Delivery();
             casa.AddToOrder(chivito);
