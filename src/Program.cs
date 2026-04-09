@@ -28,8 +28,7 @@ namespace Ucu.Poo.Restaurant
             Dish chivito = new Dish("Chivito", 6.00,false);
             Delivery casa = new Delivery();
             casa.AddToOrder(chivito);
-            casa.GetTotal();
-           
+            Console.WriteLine($"El total del pedido es: {casa.GetTotal()}");
         }
     }
 }
