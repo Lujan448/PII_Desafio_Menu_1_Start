@@ -2,9 +2,8 @@
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Programa principal.
-    /// </summary>
+    // Programa principal.
+    //En esta parte están las distintas instancias de clase.
     public static class Program
     {
         public static void Main()
