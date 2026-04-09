@@ -3,24 +3,26 @@ using System.Collections.Generic;
 
 namespace Ucu.Poo.Restaurant
 {
-    /// <summary>
-    /// Representa un mozo en el restaurante, encargado de atender mesas.
-    /// </summary>
+    //Representa un mozo en el restaurante, encargado de atender mesas.
+
     public class Waiter
     {
         private List<Table> assignedTables = new List<Table>();
 
+        //Es la responsabilidad de conocer el nombre del mesero.
         private string name;
         public string Name
         {
             get {return name; } set {name = value;}
         }
 
+        //Método constructor.
         public Waiter(string name)
         {
             this.Name = name;
         }
 
+        //El método sirve para agregar una mesa en la lista.
         public void AssignTable(Table table)
         {
             if (!assignedTables.Contains(table))
@@ -29,6 +31,7 @@ namespace Ucu.Poo.Restaurant
             } 
         }
 
+        //El método sirve para tomar la orden de esa mesa.
         public void TakeOrder(Table table, Dish dish)
         {
             if (!assignedTables.Contains(table))
