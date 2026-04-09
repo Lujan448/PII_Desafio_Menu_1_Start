@@ -60,6 +60,8 @@ namespace Ucu.Poo.Restaurant
             return order.Count > 0;
         }
 
+        //Este método se implementa en esta clase porque es la que
+        //contiene la información necesaria para realizar la responsabilidad.
         public double GetTotal()
         {
                 double result = 0;
