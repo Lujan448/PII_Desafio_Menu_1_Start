@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 namespace Ucu.Poo.Restaurant
 {
-    //Agregue esta nueva clase porque tuve que aplicar el principio de responsabilidad única.
-    //La justificación de porque aplique SRP fue porque habia más de una razón de cambio.
+    // Use SRP y por lo tanto, creé una nueva clase para separar responsabilidades,
+    // ya que la clase Table tenía más de una razón de cambio.
+    // En este caso, esta clase se va a encargar de aquellos pedidos que se hagan por delivery.
     public class Delivery
     {
         private List<Dish> orden = new List<Dish>();
