@@ -28,12 +28,12 @@ namespace Ucu.Poo.Restaurant
             this.IsOccupied = false;
         }
 
-        //se obtiene si la mesa está ocupada o no.
+        //se obtiene si la mesa está ocupada.
         public void Occupy()
         {
             if (IsOccupied)
             {
-                Console.WriteLine("La mesa esta ocupada");
+                Console.WriteLine("La mesa ya esta ocupada");          
             }
             else
             {
