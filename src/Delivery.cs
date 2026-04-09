@@ -9,15 +9,19 @@ namespace Ucu.Poo.Restaurant
     public class Delivery
     {
         private List<Dish> orden = new List<Dish>();
+
+        //Este método sirve para agregar pedidos a una lista de pedidos.
         public void AddToOrder(Dish pedido)
         {
             orden.Add(pedido);
         }
+        //Este método sirve para contar la cantidad de pedidos que se pidieron.
         public bool HasOrder()
         {
             return orden.Count > 0;
         }
        
+        //Este método sirve para obtener el total de la compra por el delivery.
         public double GetTotal()
         {
                 double result = 0;
